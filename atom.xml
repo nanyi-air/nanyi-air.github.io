@@ -3,11 +3,11 @@
   <title>WangFD的博客</title>
   
   <subtitle>Life is short, I use Python!</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="/nanyi-air.github.io/atom.xml" rel="self"/>
   
-  <link href="http://www.itjuc.com/"/>
+  <link href="http://didid.top/blog/"/>
   <updated>2019-07-27T12:36:28.037Z</updated>
-  <id>http://www.itjuc.com/</id>
+  <id>http://didid.top/blog/</id>
   
   <author>
     <name>FanDong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://www.itjuc.com/2019/07/27/hello-world/"/>
-    <id>http://www.itjuc.com/2019/07/27/hello-world/</id>
+    <link href="http://didid.top/blog/2019/07/27/hello-world/"/>
+    <id>http://didid.top/blog/2019/07/27/hello-world/</id>
     <published>2019-07-27T06:46:45.921Z</published>
     <updated>2019-07-27T12:36:28.037Z</updated>
     
