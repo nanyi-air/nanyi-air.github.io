@@ -99,17 +99,18 @@
   };
 </script>
 
-  <meta name="description" content="我不怕千万人阻挡,只怕自己投降!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://didid.top/blog/categories/index.html">
+  <meta name="description" content="进程锁框架1.介绍该代码适用于多进程中需要保证每个进程独立运行,并且某段代码只需要随机任意一个进程执行一次即可的情景. 原理:当多个进程都进入该段代码.某一个进程会创建文件并写入自己的pid,其他进程过来发现文件已创建就会将自己进程杀死,以实现多进程只执行一次该代码的逻辑">
+<meta name="keywords" content="线程与进程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="进程锁">
+<meta property="og:url" content="http://didid.top/blog/2020/01/14/进程锁/index.html">
 <meta property="og:site_name" content="WangFD的博客">
-<meta property="og:description" content="我不怕千万人阻挡,只怕自己投降!">
+<meta property="og:description" content="进程锁框架1.介绍该代码适用于多进程中需要保证每个进程独立运行,并且某段代码只需要随机任意一个进程执行一次即可的情景. 原理:当多个进程都进入该段代码.某一个进程会创建文件并写入自己的pid,其他进程过来发现文件已创建就会将自己进程杀死,以实现多进程只执行一次该代码的逻辑">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-01-14T12:50:24.070Z">
+<meta property="og:updated_time" content="2020-01-14T12:27:08.837Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="我不怕千万人阻挡,只怕自己投降!">
+<meta name="twitter:title" content="进程锁">
+<meta name="twitter:description" content="进程锁框架1.介绍该代码适用于多进程中需要保证每个进程独立运行,并且某段代码只需要随机任意一个进程执行一次即可的情景. 原理:当多个进程都进入该段代码.某一个进程会创建文件并写入自己的pid,其他进程过来发现文件已创建就会将自己进程杀死,以实现多进程只执行一次该代码的逻辑">
 
 
 
@@ -119,7 +120,7 @@
 
   
   
-  <link rel="canonical" href="http://didid.top/blog/categories/">
+  <link rel="canonical" href="http://didid.top/blog/2020/01/14/进程锁/">
 
 
 
@@ -130,7 +131,7 @@
 </script>
 
   
-  <title>categories | WangFD的博客</title>
+  <title>进程锁 | WangFD的博客</title>
   
 
 
@@ -274,7 +275,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -358,90 +359,229 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
+      
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://didid.top/blog/nanyi-air.github.io/2020/01/14/进程锁/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FanDong">
+      <meta itemprop="description" content="我不怕千万人阻挡,只怕自己投降!">
+      <meta itemprop="image" content="/nanyi-air.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WangFD的博客">
+    </span>
+
     
-    
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">categories
-
-</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
+          <h1 class="post-title" itemprop="name headline">进程锁
+
               
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-              目前共计 2 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/nanyi-air.github.io/categories/Linux/">Linux</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/nanyi-air.github.io/categories/Python/">Python</a><span class="category-list-count">8</span></li></ul>
-            </div>
-          </div>
+            
+          </h1>
         
-      </div>
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-01-14 20:21:26 / 修改时间：20:27:08" itemprop="dateCreated datePublished" datetime="2020-01-14T20:21:26+08:00">2020-01-14</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/nanyi-air.github.io/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="进程锁框架"><a href="#进程锁框架" class="headerlink" title="进程锁框架"></a>进程锁框架</h2><h3 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h3><p>该代码适用于多进程中需要保证每个进程独立运行,并且某段代码只需要随机任意一个进程执行一次即可的情景.</p>
+<p>原理:当多个进程都进入该段代码.某一个进程会创建文件并写入自己的pid,其他进程过来发现文件已创建就会将自己进程杀死,以实现多进程只执行一次该代码的逻辑</p>
+<a id="more"></a>
+
+<h3 id="2-进程锁框架代码"><a href="#2-进程锁框架代码" class="headerlink" title="2.进程锁框架代码"></a>2.进程锁框架代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ProcessLock</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="string">""" only one process can run, others will wait until that done.</span></span><br><span class="line"><span class="string">    with ProcessLock(filename='tmp.lock'):</span></span><br><span class="line"><span class="string">        do something</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, filename=None)</span>:</span></span><br><span class="line">        self.filename = filename <span class="keyword">or</span> <span class="string">'alockfile.lock'</span></span><br><span class="line"></span><br><span class="line"><span class="meta">    @property</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">status</span><span class="params">(self)</span>:</span></span><br><span class="line">        pid = str(os.getpid())</span><br><span class="line">        i = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> i &lt;= <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                <span class="comment"># "x"模式创建文件并写入,如果文件已存在会报错</span></span><br><span class="line">                <span class="keyword">with</span> open(self.filename, <span class="string">'x'</span>) <span class="keyword">as</span> f:</span><br><span class="line">                    f.write(pid)</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">except</span> FileExistsError:</span><br><span class="line">                <span class="keyword">try</span>:</span><br><span class="line">                    <span class="keyword">with</span> open(self.filename) <span class="keyword">as</span> f:</span><br><span class="line">                        epid = f.read()</span><br><span class="line">                    <span class="keyword">if</span> epid.isdigit():</span><br><span class="line">                        epid = int(epid)</span><br><span class="line">                        <span class="keyword">try</span>:</span><br><span class="line">                            os.kill(epid, <span class="number">0</span>)</span><br><span class="line">                        <span class="keyword">except</span> ProcessLookupError:</span><br><span class="line">                            <span class="comment"># 用于删除文件,如果文件是一个目录则返回一个错误</span></span><br><span class="line">                            os.unlink(self.filename)</span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        os.unlink(self.filename)</span><br><span class="line">                <span class="keyword">except</span> Exception:</span><br><span class="line">                    <span class="keyword">pass</span></span><br><span class="line">                <span class="keyword">finally</span>:</span><br><span class="line">                    time.sleep(<span class="number">1</span>)</span><br><span class="line">                    i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="keyword">if</span> ProcessLock().status:</span><br><span class="line">        print(<span class="string">'ok'</span>)</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
+
     
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+      <div>
+        
 
 
 
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>FanDong</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
     
+    <a href="http://didid.top/blog/2020/01/14/进程锁/" title="进程锁">http://didid.top/blog/2020/01/14/进程锁/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
-    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/nanyi-air.github.io/tags/线程与进程/" rel="tag"><i class="fa fa-tag"></i> 线程与进程</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/nanyi-air.github.io/2020/01/14/多线程/" rel="next" title="多线程">
+                <i class="fa fa-chevron-left"></i> 多线程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/nanyi-air.github.io/2020/01/14/linux中node的安装/" rel="prev" title="linux中node的安装">
+                linux中node的安装 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
   </div>
 
 
@@ -469,8 +609,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -605,6 +754,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#进程锁框架"><span class="nav-number">1.</span> <span class="nav-text">进程锁框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍"><span class="nav-number">1.1.</span> <span class="nav-text">1.介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-进程锁框架代码"><span class="nav-number">1.2.</span> <span class="nav-text">2.进程锁框架代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

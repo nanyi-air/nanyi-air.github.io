@@ -99,17 +99,18 @@
   };
 </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="nginx+uwsgi+django在云服务器上部署项目uwsgi启动：uwsgi –ini uwsgi.ini 停止：uwsgi –stop uwsgi.pid 如果报错查看文件:vi uwsgi.log 停止如果还有剩余进程使用如下命令：pkill -f uwsgi -9 查看进程命令:ps aux | grep uwsgi">
+<meta name="keywords" content="nginx,uwsgi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://didid.top/blog/2019/07/27/hello-world/index.html">
+<meta property="og:title" content="nginx+uwsgi部署项目">
+<meta property="og:url" content="http://didid.top/blog/2020/01/14/nginx-uwsgi部署项目/index.html">
 <meta property="og:site_name" content="WangFD的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="nginx+uwsgi+django在云服务器上部署项目uwsgi启动：uwsgi –ini uwsgi.ini 停止：uwsgi –stop uwsgi.pid 如果报错查看文件:vi uwsgi.log 停止如果还有剩余进程使用如下命令：pkill -f uwsgi -9 查看进程命令:ps aux | grep uwsgi">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-27T12:36:28.037Z">
+<meta property="og:updated_time" content="2020-01-14T12:27:43.489Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="nginx+uwsgi部署项目">
+<meta name="twitter:description" content="nginx+uwsgi+django在云服务器上部署项目uwsgi启动：uwsgi –ini uwsgi.ini 停止：uwsgi –stop uwsgi.pid 如果报错查看文件:vi uwsgi.log 停止如果还有剩余进程使用如下命令：pkill -f uwsgi -9 查看进程命令:ps aux | grep uwsgi">
 
 
 
@@ -119,7 +120,7 @@
 
   
   
-  <link rel="canonical" href="http://didid.top/blog/2019/07/27/hello-world/">
+  <link rel="canonical" href="http://didid.top/blog/2020/01/14/nginx-uwsgi部署项目/">
 
 
 
@@ -130,7 +131,7 @@
 </script>
 
   
-  <title>Hello World | WangFD的博客</title>
+  <title>nginx+uwsgi部署项目 | WangFD的博客</title>
   
 
 
@@ -267,7 +268,7 @@
       
     
 
-    <a href="/nanyi-air.github.io/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">0</span></a>
+    <a href="/nanyi-air.github.io/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签<span class="badge">12</span></a>
 
   </li>
         
@@ -285,7 +286,7 @@
       
     
 
-    <a href="/nanyi-air.github.io/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">0</span></a>
+    <a href="/nanyi-air.github.io/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">2</span></a>
 
   </li>
         
@@ -303,7 +304,7 @@
       
     
 
-    <a href="/nanyi-air.github.io/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">1</span></a>
+    <a href="/nanyi-air.github.io/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档<span class="badge">11</span></a>
 
   </li>
 
@@ -376,7 +377,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://didid.top/blog/nanyi-air.github.io/2019/07/27/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://didid.top/blog/nanyi-air.github.io/2020/01/14/nginx-uwsgi部署项目/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="FanDong">
@@ -393,7 +394,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">nginx+uwsgi部署项目
 
               
             
@@ -419,7 +420,7 @@
                 
               
 
-              <time title="创建时间：2019-07-27 14:46:45 / 修改时间：20:36:28" itemprop="dateCreated datePublished" datetime="2019-07-27T14:46:45+08:00">2019-07-27</time>
+              <time title="创建时间：2020-01-14 20:20:21 / 修改时间：20:27:43" itemprop="dateCreated datePublished" datetime="2020-01-14T20:20:21+08:00">2020-01-14</time>
             </span>
           
 
@@ -429,6 +430,21 @@
             
           
 
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/nanyi-air.github.io/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -466,21 +482,48 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><a id="more"></a>
-
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="nginx-uwsgi-django在云服务器上部署项目"><a href="#nginx-uwsgi-django在云服务器上部署项目" class="headerlink" title="nginx+uwsgi+django在云服务器上部署项目"></a>nginx+uwsgi+django在云服务器上部署项目</h2><h3 id="uwsgi"><a href="#uwsgi" class="headerlink" title="uwsgi"></a>uwsgi</h3><p>启动：uwsgi –ini uwsgi.ini</p>
+<p>停止：uwsgi –stop uwsgi.pid</p>
+<p>如果报错查看文件:vi uwsgi.log</p>
+<p>停止如果还有剩余进程使用如下命令：pkill -f uwsgi -9</p>
+<p>查看进程命令:ps aux | grep uwsgi</p>
+<a id="more"></a>
+<h3 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h3><p>修改nginx配置文件：vi /usr/local/nginx/conf/nginx.conf</p>
+<p>查看进程命令: ps aux | grep nginx</p>
+<p>重启nginx服务：sudo /usr/local/nginx/sbin/nginx -s reload</p>
+<p>停止nginx服务：sudo /usr/local/nginx/sbin/nginx -s stop</p>
+<p>启动nginx服务：sudo /usr/local/nginx/sbin/nginx</p>
+<p>查看nginx错误日志：vi /usr/local/nginx/logs/error.log</p>
+<h3 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h3><p>查看后10行：tail -n 10 文件名</p>
+<h3 id="uwsgi配置"><a href="#uwsgi配置" class="headerlink" title="uwsgi配置"></a>uwsgi配置</h3><ul>
+<li><p>1.在项目目录下创建uwsgi.ini文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[uwsgi]</span><br><span class="line"><span class="meta">#</span> 使用nginx连接（注意这里写的都是云服务器的内网IP）</span><br><span class="line"><span class="meta">#</span> socket=xxx:8000</span><br><span class="line"><span class="meta">#</span> 使用uwsgi部署</span><br><span class="line">http=xxx:8000</span><br><span class="line"><span class="meta">#</span> 项目目录注意不加引号</span><br><span class="line">chdir=/root/FanDong_Travel/TravelWeb/zhiqiTravel</span><br><span class="line"><span class="meta">#</span> 项目中wsgi.py文件路径</span><br><span class="line">wsgi-file=zhiqiTravel/wsgi.py</span><br><span class="line"><span class="meta">#</span> 进程数</span><br><span class="line">processes=4</span><br><span class="line"><span class="meta">#</span> 线程数</span><br><span class="line">threads=2</span><br><span class="line"><span class="meta">#</span> 存放进程编号的文件</span><br><span class="line">pidfile=uwsgi.pid</span><br><span class="line"><span class="meta">#</span> uwsgi日志</span><br><span class="line">daemonize=uwsgi.log</span><br><span class="line"><span class="meta">#</span> 虚拟环境</span><br><span class="line">virtualenv=/root/.virtualenvs/django2.1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.连接远程服务器，然后将本地文件上传</p>
+</li>
+<li><p>3.启动uwsgi.ini文件</p>
+</li>
+</ul>
+<h3 id="nginx配置静态服务器和反向代理-负载均衡"><a href="#nginx配置静态服务器和反向代理-负载均衡" class="headerlink" title="nginx配置静态服务器和反向代理-负载均衡"></a>nginx配置静态服务器和反向代理-负载均衡</h3><ul>
+<li><p>1.创建uwsgi2.ini文件，将端口号改为其他的例如8001之类的</p>
+</li>
+<li><p>2.启动uwsgi2.ini，使用ps aux | grep uwsgi查看是否启动了两个uwsgi</p>
+</li>
+<li><p>3.进入nginx的配置文件下修改配置/usr/local/nginx/conf/nginx.conf</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 首先第一行修改为user root;需要root权限用户</span><br><span class="line"><span class="meta">		#</span> 配置负载均衡使用的</span><br><span class="line">    upstream zhiqiTravel&#123;</span><br><span class="line">        server xxx:8000;</span><br><span class="line"></span><br><span class="line">        server xxx:8001;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">		</span><br><span class="line">    server &#123;</span><br><span class="line">    		# 注意修改这里的端口号</span><br><span class="line">        listen       8000;</span><br><span class="line">        server_name  localhost;</span><br><span class="line"></span><br><span class="line">        #charset koi8-r;</span><br><span class="line"></span><br><span class="line">        #access_log  logs/host.access.log  main;</span><br><span class="line"></span><br><span class="line">        location / &#123;</span><br><span class="line">            # 将所有的参数转到uwsgi下</span><br><span class="line">            include uwsgi_params;</span><br><span class="line">            # uwsgi的ip与端口</span><br><span class="line">            uwsgi_pass xxx:8000;</span><br><span class="line">            # 配置负载均衡</span><br><span class="line">            # uwsgi_pass zhiqiTravel;</span><br><span class="line">            # root   html;</span><br><span class="line">            # index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">				# 配置静态文件</span><br><span class="line">        location /static &#123;</span><br><span class="line">            autoindex on;</span><br><span class="line">            # 注意如果是/目录使用root。其他使用alias</span><br><span class="line">            alias /root/FanDong_Travel/TravelWeb/zhiqiTravel/static/;</span><br><span class="line">        &#125;</span><br><span class="line">				</span><br><span class="line">        location /media &#123;</span><br><span class="line">            alias /root/FanDong_Travel/TravelWeb/zhiqiTravel/media/;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>4.注意将项目文件增加权限，chmod -R 777 项目文件：这里可能会产生一个问题</p>
+<p>如果遇到静态文件加载不出来的问题，并且已经修改了nginx文件的情况下还是不行，那么就是你将文件放在root目录下，权限不够的问题，解决方案：</p>
+<ul>
+<li>1.将项目移出root目录</li>
+<li>2.给root文件设置最高权限sudo chmod -R 777 root</li>
+</ul>
+</li>
+<li><p>5.注意回到项目中manage.py文件所在的路径下执行：　python manage.py collectstatic然后输入yes，将django项目中的静态文件分离出来</p>
+</li>
+<li><p>6.重启uwsgi和nginx即可</p>
+</li>
+</ul>
 
       
     </div>
@@ -519,7 +562,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="http://didid.top/blog/2019/07/27/hello-world/" title="Hello World">http://didid.top/blog/2019/07/27/hello-world/</a>
+    <a href="http://didid.top/blog/2020/01/14/nginx-uwsgi部署项目/" title="nginx+uwsgi部署项目">http://didid.top/blog/2020/01/14/nginx-uwsgi部署项目/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -530,11 +573,42 @@
 
     <footer class="post-footer">
       
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/nanyi-air.github.io/tags/nginx/" rel="tag"><i class="fa fa-tag"></i> nginx</a>
+          
+            <a href="/nanyi-air.github.io/tags/uwsgi/" rel="tag"><i class="fa fa-tag"></i> uwsgi</a>
+          
+        </div>
+      
 
       
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/nanyi-air.github.io/2020/01/14/kafka接入获取数据/" rel="next" title="kafka接入获取数据">
+                <i class="fa fa-chevron-left"></i> kafka接入获取数据
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/nanyi-air.github.io/2020/01/14/oss的应用/" rel="prev" title="oss的应用">
+                oss的应用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -601,14 +675,72 @@
         
           <a href="/nanyi-air.github.io/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
     
 
     
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/nanyi-air.github.io/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
 
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/nanyi-air.github.io/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
     
   </nav>
 
@@ -671,7 +803,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#nginx-uwsgi-django在云服务器上部署项目"><span class="nav-number">1.</span> <span class="nav-text">nginx+uwsgi+django在云服务器上部署项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#uwsgi"><span class="nav-number">1.1.</span> <span class="nav-text">uwsgi</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx"><span class="nav-number">1.2.</span> <span class="nav-text">nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vim"><span class="nav-number">1.3.</span> <span class="nav-text">vim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uwsgi配置"><span class="nav-number">1.4.</span> <span class="nav-text">uwsgi配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nginx配置静态服务器和反向代理-负载均衡"><span class="nav-number">1.5.</span> <span class="nav-text">nginx配置静态服务器和反向代理-负载均衡</span></a></li></ol></li></ol></div>
             
 
           </div>

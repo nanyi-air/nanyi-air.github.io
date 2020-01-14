@@ -99,17 +99,18 @@
   };
 </script>
 
-  <meta name="description" content="我不怕千万人阻挡,只怕自己投降!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://didid.top/blog/categories/index.html">
+  <meta name="description" content="python 通过SSHTunnelForwarder隧道连接redis和MongoDB1.介绍该代码用于需要远程连接内网服务器上的redis或者MongoDB数据库时使用借助SSH搭建通道实现本地连接远程的数据库,方便本地调试">
+<meta name="keywords" content="SSH,redis,MongoDB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="本地SSH连接内网redis和MongoDB">
+<meta property="og:url" content="http://didid.top/blog/2020/01/14/本地SSH连接内网redis和MongoDB/index.html">
 <meta property="og:site_name" content="WangFD的博客">
-<meta property="og:description" content="我不怕千万人阻挡,只怕自己投降!">
+<meta property="og:description" content="python 通过SSHTunnelForwarder隧道连接redis和MongoDB1.介绍该代码用于需要远程连接内网服务器上的redis或者MongoDB数据库时使用借助SSH搭建通道实现本地连接远程的数据库,方便本地调试">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-01-14T12:50:24.070Z">
+<meta property="og:updated_time" content="2020-01-14T12:27:55.026Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="我不怕千万人阻挡,只怕自己投降!">
+<meta name="twitter:title" content="本地SSH连接内网redis和MongoDB">
+<meta name="twitter:description" content="python 通过SSHTunnelForwarder隧道连接redis和MongoDB1.介绍该代码用于需要远程连接内网服务器上的redis或者MongoDB数据库时使用借助SSH搭建通道实现本地连接远程的数据库,方便本地调试">
 
 
 
@@ -119,7 +120,7 @@
 
   
   
-  <link rel="canonical" href="http://didid.top/blog/categories/">
+  <link rel="canonical" href="http://didid.top/blog/2020/01/14/本地SSH连接内网redis和MongoDB/">
 
 
 
@@ -130,7 +131,7 @@
 </script>
 
   
-  <title>categories | WangFD的博客</title>
+  <title>本地SSH连接内网redis和MongoDB | WangFD的博客</title>
   
 
 
@@ -274,7 +275,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -358,90 +359,232 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
+      
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://didid.top/blog/nanyi-air.github.io/2020/01/14/本地SSH连接内网redis和MongoDB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="FanDong">
+      <meta itemprop="description" content="我不怕千万人阻挡,只怕自己投降!">
+      <meta itemprop="image" content="/nanyi-air.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WangFD的博客">
+    </span>
+
     
-    
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">categories
-
-</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
+          <h1 class="post-title" itemprop="name headline">本地SSH连接内网redis和MongoDB
+
               
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-              目前共计 2 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/nanyi-air.github.io/categories/Linux/">Linux</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/nanyi-air.github.io/categories/Python/">Python</a><span class="category-list-count">8</span></li></ul>
-            </div>
-          </div>
+            
+          </h1>
         
-      </div>
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-01-14 20:21:01 / 修改时间：20:27:55" itemprop="dateCreated datePublished" datetime="2020-01-14T20:21:01+08:00">2020-01-14</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/nanyi-air.github.io/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="python-通过SSHTunnelForwarder隧道连接redis和MongoDB"><a href="#python-通过SSHTunnelForwarder隧道连接redis和MongoDB" class="headerlink" title="python 通过SSHTunnelForwarder隧道连接redis和MongoDB"></a>python 通过SSHTunnelForwarder隧道连接redis和MongoDB</h2><h3 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h3><p>该代码用于需要远程连接内网服务器上的redis或者MongoDB数据库时使用借助SSH搭建通道实现本地连接远程的数据库,方便本地调试</p>
+<a id="more"></a>
+
+<h3 id="2-模块代码"><a href="#2-模块代码" class="headerlink" title="2.模块代码"></a>2.模块代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">server = SSHTunnelForwarder(</span><br><span class="line">        ssh_address_or_host=<span class="string">'xxx'</span>,  <span class="comment"># ssh地址</span></span><br><span class="line">        ssh_username=<span class="string">'xxx'</span>,  <span class="comment"># ssh连接的用户名</span></span><br><span class="line">        ssh_password=<span class="string">'xxx'</span>,  <span class="comment"># ssh连接的用户名</span></span><br><span class="line">        remote_bind_addresses=[(<span class="string">'redis地址'</span>, <span class="number">6379</span>),</span><br><span class="line">                               (<span class="string">'mongoDB地址'</span>, MongoDB端口号)],</span><br><span class="line">        local_bind_addresses=[(<span class="string">'127.0.0.1'</span>, <span class="number">10005</span>),</span><br><span class="line">                              (<span class="string">'127.0.0.1'</span>, <span class="number">13717</span>)]</span><br><span class="line">    )</span><br><span class="line">    <span class="keyword">if</span> env == <span class="string">'local'</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            server.start()</span><br><span class="line">        <span class="keyword">except</span> Exception:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">    redis_config = &#123;</span><br><span class="line">        <span class="string">'host'</span>: <span class="string">'127.0.0.1'</span>,</span><br><span class="line">        <span class="string">'port'</span>: <span class="number">10005</span>,</span><br><span class="line">        <span class="string">'db'</span>: <span class="number">22</span>,</span><br><span class="line">        <span class="string">'password'</span>: <span class="string">'xxx'</span>,</span><br><span class="line">        <span class="string">'decode_responses'</span>: <span class="literal">True</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
+
     
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+      <div>
+        
 
 
 
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>FanDong</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
     
+    <a href="http://didid.top/blog/2020/01/14/本地SSH连接内网redis和MongoDB/" title="本地SSH连接内网redis和MongoDB">http://didid.top/blog/2020/01/14/本地SSH连接内网redis和MongoDB/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
-    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/nanyi-air.github.io/tags/SSH/" rel="tag"><i class="fa fa-tag"></i> SSH</a>
+          
+            <a href="/nanyi-air.github.io/tags/redis/" rel="tag"><i class="fa fa-tag"></i> redis</a>
+          
+            <a href="/nanyi-air.github.io/tags/MongoDB/" rel="tag"><i class="fa fa-tag"></i> MongoDB</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/nanyi-air.github.io/2020/01/14/socket长连接通讯/" rel="next" title="socket长连接通讯">
+                <i class="fa fa-chevron-left"></i> socket长连接通讯
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/nanyi-air.github.io/2020/01/14/错误日志以及邮件/" rel="prev" title="错误日志以及邮件">
+                错误日志以及邮件 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
   </div>
 
 
@@ -469,8 +612,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -605,6 +757,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#python-通过SSHTunnelForwarder隧道连接redis和MongoDB"><span class="nav-number">1.</span> <span class="nav-text">python 通过SSHTunnelForwarder隧道连接redis和MongoDB</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍"><span class="nav-number">1.1.</span> <span class="nav-text">1.介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-模块代码"><span class="nav-number">1.2.</span> <span class="nav-text">2.模块代码</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
