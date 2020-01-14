@@ -6,7 +6,7 @@
   <link href="/nanyi-air.github.io/atom.xml" rel="self"/>
   
   <link href="http://didid.top/blog/"/>
-  <updated>2020-01-14T12:49:01.450Z</updated>
+  <updated>2020-01-14T12:28:29.861Z</updated>
   <id>http://didid.top/blog/</id>
   
   <author>
@@ -15,20 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://didid.top/blog/2020/01/14/test/"/>
-    <id>http://didid.top/blog/2020/01/14/test/</id>
-    <published>2020-01-14T12:49:01.000Z</published>
-    <updated>2020-01-14T12:49:01.450Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>linux中node的安装</title>

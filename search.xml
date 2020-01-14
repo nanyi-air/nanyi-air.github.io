@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2Fnanyi-air.github.io%2F2020%2F01%2F14%2Ftest%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[linux中node的安装]]></title>
     <url>%2Fnanyi-air.github.io%2F2020%2F01%2F14%2Flinux%E4%B8%ADnode%E7%9A%84%E5%AE%89%E8%A3%85%2F</url>
     <content type="text"><![CDATA[1.打开node官网下载对应版本的文件Node下载地址 解压命令：tar xvJf ***.tar.xz 2.解压文件到本地注意:将文件复制到linux的opt目录下,不然可能创建软连接后无法执行3.创建对应的软连接12sudo ln -s /opt/node-xx/npm /usr/bin/npmsudo ln -s /opt/node-xx/node /usr/bin/node 4.测试是否安装成功12node -vnpm -v]]></content>
